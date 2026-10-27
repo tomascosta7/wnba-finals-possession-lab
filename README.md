@@ -30,7 +30,7 @@ Possession-based eventing analysis of the 2026 WNBA Finals (Atlanta Dream vs Gol
 - And-one and flagrant free throws stay in the same possession; technical free throws do not open a possession.
 - Team rebounds and shot-clock turnovers have no player; the team comes from the `personId` field.
 
-Validation: points rebuilt from the events match the official running score on every scoring play of all four games.
+Validation: points rebuilt from the events match the official running score on every scoring play of all five games.
 
 ## Views
 
@@ -49,8 +49,9 @@ Validation: points rebuilt from the events match the official running score on e
 | G2 | ATL 79–65 | 78.0 | 100.0 | 84.4 |
 | G3 | ATL 97–71 | 80.0 | 121.3 | 88.8 |
 | G4 | GSV 67–62 | 72.0 | 86.1 | 93.1 |
+| G5 | GSV 64–55 | 68.5 | 79.7 | 94.1 |
 
-Golden State's offense stays between 84 and 93; Atlanta's swings from 85 to 121. Golden State won the two slowest games.
+Golden State leads the series 3–2. Its offense stays between 84 and 94; Atlanta's swings from 80 to 121. Golden State won the three slowest games (pace 75 or lower), Atlanta the two fastest.
 
 ## Repository
 
