@@ -2,7 +2,7 @@
 
 **Author:** Tomás Costa · Master's in Sports Analytics, Escuela Universitaria Real Madrid – Universidad Europea
 
-Possession-based eventing analysis of the 2026 WNBA Finals (Atlanta Dream vs Golden State Valkyries).
+Possession-based eventing analysis of the 2026 WNBA Finals (Atlanta Dream vs Golden State Valkyries), all seven games. Golden State won the title 4–3.
 
 **Live tool:** open `index.html` in any browser, or visit the GitHub Pages link of this repository.
 
@@ -30,7 +30,7 @@ Possession-based eventing analysis of the 2026 WNBA Finals (Atlanta Dream vs Gol
 - And-one and flagrant free throws stay in the same possession; technical free throws do not open a possession.
 - Team rebounds and shot-clock turnovers have no player; the team comes from the `personId` field.
 
-Validation: points rebuilt from the events match the official running score on every scoring play of all five games.
+Validation: points rebuilt from the events match the official running score on every scoring play of all seven games.
 
 ## Views
 
@@ -50,8 +50,10 @@ Validation: points rebuilt from the events match the official running score on e
 | G3 | ATL 97–71 | 80.0 | 121.3 | 88.8 |
 | G4 | GSV 67–62 | 72.0 | 86.1 | 93.1 |
 | G5 | GSV 64–55 | 68.5 | 79.7 | 94.1 |
+| G6 | ATL 80–69 | 77.5 | 103.9 | 88.5 |
+| G7 | GSV 68–63 | 71.5 | 88.7 | 94.4 |
 
-Golden State leads the series 3–2. Its offense stays between 84 and 94; Atlanta's swings from 80 to 121. Golden State won the three slowest games (pace 75 or lower), Atlanta the two fastest.
+**Golden State Valkyries won the series 4–3.** Pace decided every game: Golden State won all four games played below 76 possessions (75, 72, 68.5, 71.5), Atlanta all three above (78, 80, 77.5). Golden State's offense stayed between 84 and 95 points per 100 possessions all series; Atlanta's swung from 80 to 121.
 
 ## Repository
 
@@ -62,7 +64,7 @@ scripts/get_wnba_finals_pbp.py   downloads the play-by-play (nba_api)
 images/                    screenshots
 ```
 
-To add a new game: run `pip3 install nba_api pandas` and `python3 scripts/get_wnba_finals_pbp.py`, then use **Add game CSV** in the tool.
+To add a game (another series, for example): run `pip3 install nba_api pandas` and `python3 scripts/get_wnba_finals_pbp.py`, then use **Add game CSV** in the tool.
 
 ---
 Tomás Costa · Master's in Sports Analytics · Escuela Universitaria Real Madrid – Universidad Europea
